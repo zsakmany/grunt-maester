@@ -1,5 +1,5 @@
 module.exports = function (grunt) {
   return {
-    clean: ['dist']
+    clean: ['dist','coverage']
   }
 };

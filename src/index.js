@@ -1,5 +1,6 @@
 const unit = require('./unit')();
-function isItAUnit() {
-  return unit;
+const isItAUnit = () => unit;
+function noCoverageForThisOne() {
+  return 'HAHAHA';
 }
-console.log(isItAUnit());
+module.exports = isItAUnit;
