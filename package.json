@@ -1,0 +1,38 @@
+{
+  "name": "grunt-maester",
+  "version": "1.0.0",
+  "description": "Grunt config for general purpose.",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsakmany/grunt-maester.git"
+  },
+  "keywords": [
+    "grunt",
+    "load-grunt-config",
+    "dependency"
+  ],
+  "author": {
+    "name": "Viktor Horvath",
+    "email": "zsakmany@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zsakmany/grunt-maester/issues"
+  },
+  "homepage": "https://github.com/zsakmany/grunt-maester#readme",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "grunt": "^1.0.1",
+    "grunt-browserify": "^5.0.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "load-grunt-config": "^0.19.2"
+  }
+}

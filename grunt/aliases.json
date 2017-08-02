@@ -1,0 +1,7 @@
+{
+  "default": [],
+  "build": [
+    "clean",
+    "browserify"
+  ]
+}
