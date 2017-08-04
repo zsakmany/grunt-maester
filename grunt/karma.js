@@ -3,21 +3,41 @@ module.exports = function (grunt) {
     options: {
       frameworks: ['jasmine'],
       browsers: ['PhantomJS'],
-      files: ['dist/module.tests.js'],
-      reporters: ['progress', 'coverage'],
+      files: ['dist-test/**/*test.js']
+    },
+    coverage: {
+      logLevel: 'ERROR',
+      reporters: ['coverage'],
+      singleRun: true,
       coverageReporter: {
-        type: 'html',
-        dir: 'coverage/'
+        dir: 'coverage',
+        reporters: [
+          {
+            type: 'text'
+          },
+          {
+            type: 'html'
+          }
+        ]
       }
     },
-    dev: {
-      logLevel: 'ERROR',
-      reporters: 'dots',
-      singleRun: false,
+    tdd: {
+      reporters: ['dots'],
       watch: true
     },
-    continuous: {
+    dist: {
+      logLevel: 'INFO',
+      reporters: ['dots'],
       singleRun: true
+    },
+    continuous: {
+      logLevel: 'ERROR',
+      reporters: ['dots', 'coverage'],
+      singleRun: true,
+      coverageReporter: {
+        type: 'lcov',
+        subdir: 'report-lcov/'
+      }
     }
   };
 }

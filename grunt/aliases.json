@@ -1,7 +1,22 @@
 {
   "default": [],
   "build": [
-    "clean",
-    "browserify"
+    "eslint:dist",
+    "clean:all",
+    "browserify:dist",
+    "karma:dist",
+    "uglify:dist",
+    "less:dist"
+  ],
+  "devBuild": [
+    "eslint:dev",
+    "browserify:devBuild",
+    "less:dist"
+  ],
+  "coverage": [
+    "clean:coverage",
+    "clean:test",
+    "browserify:coverage",
+    "karma:coverage"
   ]
 }

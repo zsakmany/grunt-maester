@@ -27,13 +27,18 @@
     "url": "https://github.com/zsakmany/grunt-maester/issues"
   },
   "homepage": "https://github.com/zsakmany/grunt-maester#readme",
-  "devDependencies": {
+  "dependencies": {
     "babel-plugin-istanbul": "^4.1.4",
     "babel-preset-es2015": "^6.24.1",
     "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
     "grunt": "^1.0.1",
     "grunt-browserify": "^5.0.0",
     "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-eslint": "^20.0.0",
     "grunt-karma": "^2.0.0",
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
