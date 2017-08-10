@@ -1,5 +1,7 @@
 # grunt-maester
-Grunt config for general purpose. 
+Grunt config for general purpose.  
+Ok, so In version 2.0.0 I fixed up a few things. I focued mostly on testing, and how it can be as painless as possible.  
+You can specify the root folder of the source files, and the folder of the tests.
 
 ## Current grunt commands
 `grunt browserify`  
@@ -10,11 +12,6 @@ It uses two plugins:
 
 `grunt clean`  
 Deletes the given folders. Most common target is `:all`  
-
-`grunt eslint`  
-Lints the `.js` files in the `src/` folder.  
-You can use the `:devBuild` target to allow debugger and console rules.  
-Also has a `:fix` target, that fixes all the issues which can be fixed.  
 
 `grunt eslint`  
 Lints the `.js` files in the `src/` folder.  

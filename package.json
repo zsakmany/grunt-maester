@@ -1,6 +1,6 @@
 {
   "name": "grunt-maester",
-  "version": "1.1.0",
+  "version": "2.0.0-alpha",
   "description": "Grunt config for general purpose.",
   "main": "Gruntfile.js",
   "directories": {
@@ -43,8 +43,10 @@
     "jasmine-core": "^2.7.0",
     "karma": "^1.7.0",
     "karma-coverage": "^1.1.1",
+    "karma-coverage-allsources": "0.0.4",
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
-    "load-grunt-config": "^0.19.2"
+    "load-grunt-config": "^0.19.2",
+    "proxyquireify": "^3.2.1"
   }
 }

@@ -1,22 +1,31 @@
 {
   "default": [],
-  "build": [
-    "eslint:dist",
-    "clean:all",
-    "browserify:dist",
-    "karma:dist",
-    "uglify:dist",
-    "less:dist"
-  ],
-  "devBuild": [
-    "eslint:dev",
-    "browserify:devBuild",
-    "less:dist"
-  ],
-  "coverage": [
-    "clean:coverage",
-    "clean:test",
-    "browserify:coverage",
-    "karma:coverage"
-  ]
+  "build": {
+    "description": "Builds the prod version of the project.",
+    "tasks": [
+      "eslint:dist",
+      "clean:all",
+      "browserify:dist",
+      "karma:dist",
+      "uglify:dist",
+      "less:dist"
+    ]
+  },
+  "dev": {
+    "description": "Handy for TDD, watches all change in source codes and tests.",
+    "tasks": [
+      "browserify:dist",
+      "karma:tdd",
+      "watch:dev"
+    ]
+  },
+  "coverage": {
+    "description": "Creates test coverage for the project.",
+    "tasks": [
+      "clean:coverage",
+      "clean:test",
+      "browserify:coverage",
+      "karma:coverage"
+    ]
+  }
 }
